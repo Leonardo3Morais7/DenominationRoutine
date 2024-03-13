@@ -127,7 +127,7 @@ public class AtmPayoutsTests
             new List<BankNotesCombination>()
             {
                 new BankNotesCombination(1, 50),
-                new BankNotesCombination(19, 10)
+                new BankNotesCombination(18, 10)
             },
             new List<BankNotesCombination>()
             {
@@ -160,7 +160,12 @@ public class AtmPayoutsTests
                 new BankNotesCombination(1, 100),
                 new BankNotesCombination(2, 50),
                 new BankNotesCombination(3, 10),
-            }
+            },
+            new List<BankNotesCombination>()
+            {
+                new BankNotesCombination(2, 100),
+                new BankNotesCombination(3, 10),
+            },
         };
 
         var actual = AtmPayouts.PossiblePayouts(230);
