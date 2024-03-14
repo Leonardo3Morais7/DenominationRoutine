@@ -11,7 +11,8 @@ This project has as its main objective to receive an integer value and return th
 Some areas for improvement are:
 
 - [x] Insert any number on the console
-- [x] Insert any cartridge note with one line of code
+- [x] Insert multiples of 5 cartridge notes (5,10,15,20,40,120,200...) with one line of code 
+- [ ] Insert any cartridge note with one line of code
 - [ ] Insert any cartridge note on execution time
 
 ## ☕ Using Denomination Routine
