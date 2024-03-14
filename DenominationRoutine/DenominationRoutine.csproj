@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DenominationRoutineLibrary\DenominationRoutineLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
