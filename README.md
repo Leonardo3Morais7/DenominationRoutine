@@ -15,6 +15,12 @@ Some areas for improvement are:
 - [ ] Insert any cartridge note with one line of code
 - [ ] Insert any cartridge note on execution time
 
+## 💻 Requirements
+
+Before starting, please ensure you have met the following requirements:
+
+- .NET 6 installed
+  
 ## ☕ Using Denomination Routine
 
 To use this project, follow the guide:
