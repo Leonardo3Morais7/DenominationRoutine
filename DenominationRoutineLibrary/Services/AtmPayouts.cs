@@ -11,6 +11,9 @@ public static class AtmPayouts
     {
         cartridges = cartridges.OrderByDescending(i => i).ToList();
 
+        if (payment % cartridges.Min() != 0)
+            throw new Exception("Payment cannot be divided by the current notes.");
+
         var possibilities = GetPossibilities(payment, 0);
         for (int i = 0; i < possibilities.Count; i++)
         {
