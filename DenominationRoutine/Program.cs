@@ -65,16 +65,14 @@ class Program
                 try
                 {
                     var currentNumber = Convert.ToInt32(Console.ReadLine());
-                    if (currentNumber % 10 != 0)
-                        Console.WriteLine("That number is not a multiple of 10...");
-                    else if(currentNumber > 9400) 
+                    if(currentNumber > 9400) 
                         Console.WriteLine("The maximum number that the console can show is: 9400");
                     else
                         WritePossibilities(Convert.ToInt32(currentNumber));
                 }
                 catch 
                 {
-                    Console.WriteLine("Please enter a number...");
+                    Console.WriteLine("This number cannot be divided by the current notes...");
                 }
             }
         }
