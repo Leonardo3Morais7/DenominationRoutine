@@ -14,7 +14,7 @@ class Program
     {
         Console.WriteLine("Hey!");
         Console.WriteLine("My name is Leo and that's my project for the denomination routine problem");
-        Console.WriteLine("Here you can run the pre defined test suit and then input new values");
+        Console.WriteLine("Here you can run the predefined test suite and then input new values");
         Console.WriteLine("Press any key to continue...");
         Console.ReadLine();
         Console.Clear();
@@ -23,15 +23,15 @@ class Program
     static void RunTestSuit()
     {
         Console.WriteLine("The current test suit is: 30, 50, 60, 80, 140, 230, 370, 610, 980 ");
-        var runTestSuit = "";
+        var runTestSuite = "";
         do
         {
-            Console.WriteLine("Do you want to run the test suit? (y/n)");
-            runTestSuit = Console.ReadLine().ToLower();
+            Console.WriteLine("Do you want to run the test suite? (y/n)");
+            runTestSuite = Console.ReadLine().ToLower();
         }
-        while (runTestSuit != "y" && runTestSuit != "n");
+        while (runTestSuite != "y" && runTestSuite != "n");
 
-        if (runTestSuit == "y") 
+        if (runTestSuite == "y") 
         {
             WritePossibilities(30);
             WritePossibilities(50);
@@ -52,7 +52,7 @@ class Program
 
     static void RunPersonalizedTest() 
     {
-        Console.WriteLine("Now you can insert any value that you want to see the payout possibilites (multiple of 10)");
+        Console.WriteLine("Now you can insert any value that you want to see the payout possibilities (multiple of 10)");
         var runNewTest = "";
         do
         {
@@ -68,7 +68,7 @@ class Program
                     if (currentNumber % 10 != 0)
                         Console.WriteLine("That number is not a multiple of 10...");
                     else if(currentNumber > 9400) 
-                        Console.WriteLine("The maximun number that the console can show is: 9400");
+                        Console.WriteLine("The maximum number that the console can show is: 9400");
                     else
                         WritePossibilities(Convert.ToInt32(currentNumber));
                 }
