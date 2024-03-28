@@ -33,15 +33,12 @@ class Program
 
         if (runTestSuite == "y") 
         {
-            WritePossibilities(30);
-            WritePossibilities(50);
-            WritePossibilities(60);
-            WritePossibilities(80);
-            WritePossibilities(140);
-            WritePossibilities(230);
-            WritePossibilities(370);
-            WritePossibilities(610);
-            WritePossibilities(980);
+            var predefinedTest = new int[9] { 30,50,60,80,140,230,370,610,980 };
+
+            foreach (var payment in predefinedTest)
+            {
+                WritePossibilities(payment);
+            }
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadLine();
